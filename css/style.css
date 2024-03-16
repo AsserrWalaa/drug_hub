@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #00315a;
+  --secondary-color: #0aadba;
+  --secondary-color-40: rgba(10, 173, 186, 40%);
+  --secondary-color-10: rgba(10, 173, 186, 10%);
+  --gray-scale-400: #495057;
+  --gray-scale-100: #ced4da;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+body {
+  background-color: #fff;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+select,
+::placeholder {
+  color: var(--gray-scale-400) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.landing-bg {
+  background-image: url("../assets/imgs/capsulation.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+}
+.form-check {
+  border-radius: 12px !important;
+  border: 1px solid #e9eaec !important;
+}
+.form-check:has(input:checked) {
+  border: 1px solid var(--secondary-color) !important;
+}
+
+.multi-step {
+  position: relative;
+}
+.multi-step span.step {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  color: var(--gray-scale-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 15px solid #fff;
+  border: 1px solid var(--secondary-color-40);
+}
+
+.multi-step span.step.active {
+  background-color: var(--secondary-color-10);
+}
+
+.customAlert {
+  background-color: var(--secondary-color-10);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 7px;
+}

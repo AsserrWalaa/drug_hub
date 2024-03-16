@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>DrugHub - Login</title>
+  </head>
+  <body>
+    <div class="container-fluid h-100vh" style="height: 100vh">
+      <div class="row">
+        <div
+          class="col-12 col-lg-6 d-flex align-items-center justify-content-center py-5"
+        >
+          <div class="col-9">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="w-auto px-1">
+                <img
+                  src="../assets/imgs/logo-sm.svg"
+                  alt="DrugHub"
+                  height="35px"
+                  width="35px"
+                />
+              </div>
+              <h5 class="w-auto fw-bold m-0 p-0">Drug Hub</h5>
+            </div>
+            <h3 class="fw-bold text-center mt-5 ">Welcome to DrugHub !</h3>
+            <h6 class="text-center">Login to continue to DrugHub.</h6>
+            <form class="d-flex flex-column gap-4 mt-4">
+              <div class="position-relative">
+                <i
+                  class="mx-3 fs-5 top-50 position-absolute translate-middle-y fa-regular fa-envelope"
+                ></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Email"
+                  class="form-control px-5 py-3"
+                />
+              </div>
+              <div class="position-relative">
+                <i
+                  class="mx-3 fs-5 top-50 position-absolute translate-middle-y fa-solid fa-lock"
+                ></i>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  class="form-control px-5 py-3"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                />
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <input type="checkbox" id="check" class="me-1 ms-0 p-0" />
+                  <label for="check">Remember me</label>
+                </div>
+                <div>
+                  <a href="#" class="links text-decoration-none fw-bold">
+                    Forgot password</a
+                  >
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-2 my-3">
+                Login
+              </button>
+              <div class="text-center already pt-3">
+                <h6>
+                  Don't have an account ?
+                  <span>
+                    <a
+                      href="signIn.html"
+                      target="_blank"
+                      class="links text-decoration-none"
+                    >
+                      Signup now</a
+                    >
+                  </span>
+                </h6>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-6 d-none d-lg-block landing-bg"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <title>DrugHub - Healthcare Register Step 1</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100vh" style="height: 100vh">
+        <div class="row">
+            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center py-5">
+                <div class="col-9">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="w-auto px-1">
+                            <img src="../assets/imgs/logo-sm.svg" alt="DrugHub" height="35px" width="35px" />
+                        </div>
+                        <h5 class="w-auto fw-bold m-0 p-0">Drug Hub</h5>
+                    </div>
+                    <h3 class="fw-bold text-center mt-5 mb-2">Register Account</h3>
+                    <h6 class="text-center mb-5">
+                        Get your free Drug Hub account now.
+                    </h6>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="multi-step d-flex justify-content-between">
+                            <span class="step active"><i class="fa-solid fa-list fa-fw"></i></span>
+                            <span class="step"><i class="fa-solid fa-book-bookmark fa-fw"></i></span>
+                            <span class="step"><i class="fa-regular fa-user fa-fw"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-5">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 33.3%"
+                            aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="text-center pt-3">
+                        <h6>Healthcare Organization Information</h6>
+                        <p>Fill all information below</p>
+                    </div>
+                    <form>
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Healthcare Organization Name"
+                                class="form-control px-3 py-3 my-4" />
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Contact Person Name"
+                                class="form-control px-3 py-3 my-4" />
+                        </div>
+                        <div class="input-group mb-3 d-flex">
+                            <span class="input-group-text p-0" id="inputGroup-sizing-default">
+                                <select class="form-select w-auto" aria-label="Default select example">
+                                    <option value="1">
+                                        <span class="input-group-text" id="basic-addon1"><img src="/images/egy.png"
+                                                width="30px" alt="" /></span>
+                                        <span>+20</span>
+                                    </option>
+                                    <option value="1">
+                                        <span class="input-group-text" id="basic-addon1"><img src="/assets/imgs/egy.svg"
+                                                width="30px" alt="" /></span>
+                                        <span>+20</span>
+                                    </option>
+                                </select>
+                            </span>
+                            <input type="text" class="form-control flex-grow-1" placeholder="Company Phone Number"
+                                aria-label="Phone Number" aria-describedby="basic-addon1" />
+                        </div>
+
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Company Address"
+                                class="form-control px-3 py-3 my-4" />
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+                                <select class="form-select form-select-lg mb-3 fs-6"
+                                    aria-label=".form-select-lg example">
+                                    <option selected>Country</option>
+                                    <option value="1">One</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <select class="form-select form-select-lg mb-3 fs-6"
+                                    aria-label=".form-select-lg example">
+                                    <option selected>City</option>
+                                    <option value="2">Two</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="text-center already pt-3">
+                            <h6>
+                                Already have an account ?
+                                <span>
+                                    <a href="Login.html" target="_blank" class="links text-decoration-none">
+                                        Login</a>
+                                </span>
+                            </h6>
+                            <button type="submit" class="btn btn-primary w-100 py-2 my-3">
+                                Next
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6 d-none d-lg-block landing-bg"></div>
+        </div>
+    </div>
+</body>
+
+</html>
